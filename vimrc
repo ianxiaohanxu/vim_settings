@@ -98,3 +98,4 @@ let g:Powerline_symbols = 'fancy'
 "Config for Omni Completion
 inoremap <C-l> <C-x><C-l>
 inoremap <C-f> <C-x><C-n>
+inoremap <C-o> <C-x><C-o>
