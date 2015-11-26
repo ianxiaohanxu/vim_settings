@@ -2,18 +2,21 @@ set nocompatible
 filetype off
 
 " Vundle config {{
-set rtp+=~/.vim/bundle/Vundle.vim/
-call vundle#begin()
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#rc()
 
-Plugin 'VundleVim/Vundle.vim'
-Plugin 'taglist.vim'
-"Plugin 'winmanager'
-Plugin 'scrooloose/nerdtree'
-Plugin 'Lokaltog/vim-powerline'
-Plugin 'wincent/command-t'
-Plugin 'minibufexplorerpp'
+Bundle 'VundleVim/Vundle.vim'
+Bundle 'taglist.vim'
+"Bundle 'winmanager'
+Bundle 'scrooloose/nerdtree'
+Bundle 'Lokaltog/vim-powerline'
+Bundle 'wincent/command-t'
+Bundle 'minibufexplorerpp'
+Bundle 'qpkorr/vim-bufkill'
+Bundle 'othree/html5.vim'
+Bundle 'xptemplate'
+"Bundle 'SuperTab'
 
-call vundle#end()
 "}}
 
 filetype plugin indent on
@@ -46,6 +49,7 @@ nnoremap <C-h> <Esc><C-w>h
 nnoremap <C-j> <Esc><C-w>j
 nnoremap <C-k> <Esc><C-w>k
 nnoremap <C-l> <Esc><C-w>l
+nnoremap <C-q> <Esc><C-w>q
 "}}
 
 "Config for NerDTree {{
@@ -85,6 +89,8 @@ let Tlist_Show_One_File=1
 let Tlist_Exit_OnlyWindow=1
 let Tlist_Use_Right_Window=1
 let Tlist_Auto_Highlight_Tag=1
+let Tlist_WinWidth=50
+let Tlist_Auto_Open=1
 nnoremap <leader><Space> :TlistToggle<cr>
 
 "conf for plugins {{ 插件相关的配置
@@ -99,3 +105,14 @@ let g:Powerline_symbols = 'fancy'
 inoremap <C-l> <C-x><C-l>
 inoremap <C-f> <C-x><C-n>
 inoremap <C-o> <C-x><C-o>
+
+"Config for vim-bufkill
+nnoremap <C-c> <Esc>:BD<CR> 
+
+"Config for SuperTab
+"let g:SuperTabDefaultCompletionType = '<C-x><C-f>'
+
+"Config for XPTemplate
+let g:xptemplate_key = '<Tab>'
+let g:xptemplate_key_pum_only = '<S-Tab>'
+let g:xptemplate_brace_complete = '([{"'
