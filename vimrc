@@ -56,6 +56,7 @@ nnoremap <C-q> <Esc><C-w>q
 nnoremap <c-n> :NERDTreeToggle <cr>
 nnoremap <C-m> <Esc>:NERDTreeMirror<CR>
 nnoremap <C-f> <Esc>:NERDTreeFind<CR>
+let NERDTreeWinSize=50
 "}}
 
 "Config for Winmanager {{
