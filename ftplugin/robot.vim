@@ -1,2 +1,2 @@
 nnoremap    <leader>c    I#<ESC>
-inoremap    <space><space>   <space>\|<space>
+inoremap    <expr> <space><space> virtcol( .')==1 ? '\|<space>' : '<space>\|<space>'
