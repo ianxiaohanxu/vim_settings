@@ -1,2 +1,2 @@
 nnoremap    <leader>c    I#<ESC>
-inoremap    <tab>   <space>\|<space>
+inoremap    <space><space>   <space>\|<space>
