@@ -2,3 +2,7 @@
 nnoremap    <leader>d   Oimport pdb;pdb.set_trace()     #Debug code<ESC>
 "Map <leader>c to comment the current line
 nnoremap    <leader>c   I#<ESC>
+"Cancel map for <Space><Space>
+:if maparg('<Space><Space>', 'i')!=""
+:   iunmap <Space><Space>
+:endif

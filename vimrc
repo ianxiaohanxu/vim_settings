@@ -15,6 +15,7 @@ Bundle 'minibufexplorerpp'
 Bundle 'qpkorr/vim-bufkill'
 Bundle 'othree/html5.vim'
 Bundle 'xptemplate'
+Bundle 'JSON.vim'
 "Bundle 'SuperTab'
 
 "}}
@@ -43,7 +44,7 @@ set ignorecase              "检索时忽略大小写
 set fileencodings=uft-8,gbk "使用utf-8或gbk打开文件
 set hls                     "检索时高亮显示匹配项
 set helplang=cn             "帮助系统设置为中文
-set foldmethod=syntax       "代码折叠
+set foldmethod=indent       "代码折叠
 colorscheme desert
 nnoremap <C-h> <Esc><C-w>h
 nnoremap <C-j> <Esc><C-w>j
