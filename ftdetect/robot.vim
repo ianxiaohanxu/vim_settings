@@ -31,7 +31,7 @@ au BufNewFile,BufRead *.robot setlocal filetype=robot
 au BufNewFile,BufRead *.py setlocal filetype=python
 au BufNewFile,BufRead *.json setlocal filetype=json
 au BufNewFile,BufRead *.html setlocal filetype=html
-au BufNewFile,BufRead *.sh setlocal filetype=shell
+au BufNewFile,BufRead *.sh setlocal filetype=sh
 
 "func! s:FTrobot()
 "    let b:topl = getline(1)
