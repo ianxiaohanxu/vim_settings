@@ -41,7 +41,9 @@ set autoread                "文件在Vim之外修改过，自动重新读入
 set tags=/Users/alexgao/Repository/gather-tests/tags
 
 set ignorecase              "检索时忽略大小写
-set fileencodings=uft-8,gbk "使用utf-8或gbk打开文件
+set encoding=utf-8
+set fileencoding=utf-8
+set fileencodings=uft-8     "使用utf-8打开文件
 set hls                     "检索时高亮显示匹配项
 set helplang=cn             "帮助系统设置为中文
 set foldmethod=indent       "代码折叠
