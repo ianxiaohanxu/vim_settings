@@ -16,6 +16,7 @@ Bundle 'qpkorr/vim-bufkill'
 Bundle 'othree/html5.vim'
 Bundle 'xptemplate'
 Bundle 'JSON.vim'
+Bundle 'Valloric/YouCompleteMe'
 "Bundle 'SuperTab'
 
 "}}
@@ -120,3 +121,4 @@ nnoremap <C-c> <Esc>:BD<CR>
 let g:xptemplate_key = '<Tab>'
 let g:xptemplate_key_pum_only = '<S-Tab>'
 let g:xptemplate_brace_complete = '([{"'
+let g:xptemplate_vars = "SParg="
